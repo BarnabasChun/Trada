@@ -1,0 +1,35 @@
+@mixin square($x) {
+  width: $x;
+  height: $x;
+}
+
+@mixin circle($x) {
+  @include square($x);
+  border-radius: 50%;
+}
+
+
+@mixin doubleUnderline($color) {
+  &::after,
+  &::before {
+    background-color: $color;
+  }
+
+  &::after,
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 1px;
+  }
+  
+  &::before {
+    width: calc(2 * 2.5rem);
+    bottom: 0;
+  }
+  
+  &::after {
+    width: 2.5rem;
+    bottom: -4px;
+  }
+}

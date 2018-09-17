@@ -1,24 +1,38 @@
+body {
+  font-weight: 400;
+  font-family: $primaryFont;
+  line-height: 1.6;
+}
+
 [class^="heading-"] {
   font-family: $secondaryFont;
   text-transform: uppercase;
+  position: relative;
 }
 
 .heading-2 {
   font-size: 2rem;
   font-weight: 700;
+
+  &--light {
+    font-weight: 400;
+  }
 }
 
 .heading-3 {
   font-size: 1.5rem;
+  font-weight: 400;
 }
 
 .italic-text {
+  font-weight: 400;
   font-size: 1.1rem;
   font-style: italic;
 }
 
 .paragraph {
   font-size: 1.4rem;
+  line-height: 2.5rem;
 }
 
 .sub-heading {

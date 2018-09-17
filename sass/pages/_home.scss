@@ -1,0 +1,14 @@
+.about {
+  background-color: $lightGrey1;
+  padding: 12rem 0;
+  position: relative;
+
+  &__content {
+    text-align: center;
+    margin-bottom: 8rem;
+  }
+
+  &__text {
+    margin: 4rem 0;
+  }
+}

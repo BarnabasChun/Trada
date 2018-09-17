@@ -1,0 +1,65 @@
+.skill {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid $lightGrey1;
+  position: relative;
+  padding-bottom: 1.5rem;
+
+  &::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: $gold;
+    position: absolute;
+    bottom: -2px;
+  }
+  
+  &--50::after {
+    width: 50%;
+  }
+  
+  &--75::after {
+    width: 75%;
+  }
+  
+  &--95::after {
+    width: 95%;
+  }
+
+  &__title {
+    &::before {
+      position: absolute;
+      bottom: -.5rem;
+      content: '';
+      display: block;
+      height: 10px;
+      width: 2px;
+      background-color: $gold;
+    }
+  }
+
+  &__percent {
+    &--50::before {
+      left: 50%;
+    }
+    &--75::before {
+      left: 75%;
+    }
+    &--95::before {
+      left: 95%;
+    }
+
+    &::before {
+      font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f0da";
+      font-size: 1.2rem;
+      position: absolute;
+      bottom: -1.1rem;
+      color: $gold;
+      transform: rotate(-13deg);
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}

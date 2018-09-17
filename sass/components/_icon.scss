@@ -1,0 +1,15 @@
+.icon {
+  background-color: $gold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include circle(7rem);
+  position: absolute;
+  box-shadow: 0 0 0 .5rem $darkGrey2;
+
+  &--top {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

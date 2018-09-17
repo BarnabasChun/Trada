@@ -1,5 +1,23 @@
 .btn {
-  font-size: 1.1rem;
-  font-family: $secondaryFont;
-  font-weight: 400;
+  &,
+  &:visited,
+  &:link {
+    font-size: 1.1rem;
+    font-family: $secondaryFont;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+  }
+
+  &--primary {
+    color: $black;
+    border: 1px solid $black;
+    
+    &:hover {
+      background-color: $gold;
+      border: 1px solid transparent;
+      color: $white;
+    }
+  }
 }
