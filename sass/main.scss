@@ -4,6 +4,7 @@
 
 @import
   'base/base',
+  'base/animations',
   'base/typography',
   'base/utilities';
 
@@ -12,7 +13,11 @@
   'layout/header';
 
 @import
-  'components/button';
+  'components/logo',
+  'components/button',
+  'components/slider',
+  'components/social',
+  'components/nav';
 
 @import
   'pages/home';

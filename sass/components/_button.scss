@@ -3,3 +3,17 @@
   font-family: $secondaryFont;
   font-weight: 400;
 }
+
+.close-btn {
+  color: white;
+  font-size: 6rem;
+  position: absolute;
+  right: 4vw;
+  top: .8rem;
+  cursor: pointer;
+  transition: all .2s;
+
+  &:hover {
+    color: $gold;
+  }
+}

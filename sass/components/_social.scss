@@ -1,0 +1,17 @@
+.social {
+  display: flex;
+  transition: all .2s;
+  align-items: center;
+  font-size: 1.6rem;
+  
+  &__link {
+    color: $white;
+    &:hover {
+      color: $gold;
+    }
+    &:not(last-child) {
+      margin-right: 3.5rem;
+    }
+  }
+
+}
