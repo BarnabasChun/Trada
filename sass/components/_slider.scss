@@ -1,0 +1,32 @@
+.slider {
+  display: flex;
+
+  &--horizontal &__button {
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }  
+  }
+  
+  &--vertical {
+    flex-direction: column;
+  } 
+
+  &--vertical &__button {
+    transform: rotate(90deg);
+    &:not(:last-child) {
+      margin-bottom: 6rem; // width of button + 1rem
+    }  
+  }
+
+  &__button {
+    width: 5rem;
+    height: 4px;
+    border: none;
+    transition: all .2s;
+    cursor: pointer;
+
+    &:hover {
+      background-color:  $gold;
+    }
+  }
+}

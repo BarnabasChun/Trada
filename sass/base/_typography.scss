@@ -20,3 +20,29 @@
 .paragraph {
   font-size: 1.4rem;
 }
+
+.sub-heading {
+  font-size: 2.5rem;
+  letter-spacing: .6rem;
+  opacity: .8;
+}
+
+.main-heading {
+  font-size: 10rem;
+  font-weight: 700;
+  font-family: $secondaryFont;
+  &--gold {
+    color: $gold;
+  }
+}
+
+.heading-container {
+  text-transform: uppercase;
+  text-align: center;
+  animation: moveInFromBottom 1s ease-in;
+}
+
+.menu-icon {
+  font-size: 1.6rem;
+  cursor: pointer;
+}
