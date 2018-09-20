@@ -1,0 +1,13 @@
+.service {
+  position: relative;
+  &__icon-container {
+    position: absolute;
+    top: 0;
+    right: -8rem; // offset padding
+    transform: translate(50%, 50%);
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 6rem;
+  }
+}

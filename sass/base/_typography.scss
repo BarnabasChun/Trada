@@ -17,12 +17,20 @@ body {
   &--light {
     font-weight: 400;
   }
+
+  &--white {
+    color: $white;
+  }
 }
 
 .heading-3 {
   font-size: 1.5rem;
   font-weight: 400;
   @extend %heading;
+
+  &--gold {
+    color: $gold;
+  }
 }
 
 .italic-text {
@@ -34,6 +42,10 @@ body {
 .paragraph {
   font-size: 1.4rem;
   line-height: 2.5rem;
+
+  &--white {
+    color: $white;
+  }
 }
 
 .sub-heading {

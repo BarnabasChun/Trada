@@ -3,5 +3,31 @@
 .margin-bottom-md { margin-bottom: 4rem !important; }
 .margin-bottom-lg { margin-bottom: 6rem !important; }
 .margin-bottom-xl { margin-bottom: 8rem !important; }
-.double-underline--black { @include doubleUnderline($black); }
-.double-underline--white { @include doubleUnderline($white); }
+
+.double-underline { 
+  &--right {
+    &::after,
+    &::before {
+      right: 0;
+    }    
+  }
+
+  &::after,
+  &::before {
+    background-color: currentColor;
+    position: absolute;
+    content: '';
+    display: block;
+    height: 1px;
+  }
+  
+  &::before {
+    width: calc(2 * 2.5rem);
+    bottom: 0;
+  }
+  
+  &::after {
+    width: 2.5rem;
+    bottom: -4px;
+  }
+ }

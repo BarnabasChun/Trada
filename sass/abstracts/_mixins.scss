@@ -8,28 +8,12 @@
   border-radius: 50%;
 }
 
+@mixin colors {
+  &--white { color: $white; }
+  &--black { color: $black; }
+  &--gold { color: $gold; }
+}
 
-@mixin doubleUnderline($color) {
-  &::after,
-  &::before {
-    background-color: $color;
-  }
-
-  &::after,
-  &::before {
-    position: absolute;
-    content: '';
-    display: block;
-    height: 1px;
-  }
+@mixin doubleUnderline($direction) {
   
-  &::before {
-    width: calc(2 * 2.5rem);
-    bottom: 0;
-  }
-  
-  &::after {
-    width: 2.5rem;
-    bottom: -4px;
-  }
 }

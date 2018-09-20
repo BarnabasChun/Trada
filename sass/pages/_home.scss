@@ -12,3 +12,34 @@
     margin: 4rem 0;
   }
 }
+
+.services {
+  display: flex;
+  
+  > * {
+    width: 50%;
+  }
+
+  &--left {
+    background-color: $black;
+    padding: 10rem 8rem;
+  }
+  
+  &__content {
+    position: relative;
+    text-align: right;
+  }
+
+  &__img {
+    background-image: url(../img/services_img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  &__slider {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+  }
+}
