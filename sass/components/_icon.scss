@@ -1,7 +1,5 @@
 .icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexCenter;
   @include circle(7rem);
   position: absolute;
   box-shadow: 0 0 0 .5rem $darkGrey2;
