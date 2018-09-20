@@ -43,3 +43,10 @@
     left: 1rem;
   }
 }
+
+.work {
+  padding: 10rem 0;
+  &__content {
+    text-align: center;
+  }
+}

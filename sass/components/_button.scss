@@ -21,3 +21,26 @@
     }
   }
 }
+
+.page-btn {
+  @include square(3rem);
+  background-color: transparent;
+  border: 1px solid $black;
+  transition: all .2s;
+  cursor: pointer;
+
+  &--left {
+    margin-right: 1.5rem;
+  }
+
+  &:hover {
+    background-color: $gold;
+    color: white;
+    border: 1px solid transparent;
+  }
+}
+
+.page-controls {
+  display: flex;
+  justify-content: center;
+}

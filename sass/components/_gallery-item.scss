@@ -1,0 +1,53 @@
+.gallery {
+  display: flex;
+  padding: 0 .5rem;
+}
+
+.gallery-item {
+  display: inline-block;
+  
+  &:not(:last-child) {
+    margin-right: .5rem;
+  }
+
+  &__figure {
+    position: relative;
+  }
+  
+  &__img {
+    display: block; // remove "ghost space"
+    width: 100%;
+  }
+  
+  &__text {
+    border: 1px solid $lightGrey2;
+    text-align: center;
+    padding: 3rem 0;
+  }
+
+  &__icons {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    justify-content: center;
+    opacity: 0;
+    transition: opacity .3s;
+  }
+
+  &:hover &__icons {
+    opacity: 1;
+  }
+
+  &__icon-container {
+    background-color: #fff;
+    @include flexCenter;
+    @include circle(5rem);
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+}
