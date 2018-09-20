@@ -9,7 +9,7 @@
 }
 
 @mixin colors {
-  &--white { color: $white; }
+  &--white { color: #fff; }
   &--black { color: $black; }
   &--gold { color: $gold; }
 }

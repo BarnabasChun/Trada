@@ -6,7 +6,7 @@
     @include square(.9rem);
     background-color: $gold;
     transform: rotate(45deg);
-    border: 1px solid $white;
+    border: 1px solid #fff;
   }
 
   &::before, 
