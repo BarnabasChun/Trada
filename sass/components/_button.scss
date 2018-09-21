@@ -18,7 +18,7 @@
     
     &:hover {
       background-color: $gold;
-      border: 1px solid transparent;
+      border-color: transparent;
       color: #fff;
     }
   }
@@ -38,7 +38,7 @@
   &:hover {
     background-color: $gold;
     color: white;
-    border: 1px solid transparent;
+    border-color: transparent;
   }
 }
 
