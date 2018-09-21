@@ -1,0 +1,19 @@
+.dots-container {
+  display: flex;
+  justify-content: center;
+}
+
+.dot {
+  @include circle(6px);
+  background-color: transparent;
+  border: 1px solid #fff;
+  
+  &:not(:last-child) {
+    margin-right: 1rem;
+  }
+  
+  &--filled {
+    background-color: $darkGrey3;
+    border: 1px solid transparent;
+  }
+}

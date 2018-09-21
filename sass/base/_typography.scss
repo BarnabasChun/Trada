@@ -14,13 +14,9 @@ body {
   font-size: 2rem;
   font-weight: 700;
   @extend %heading;
-  &--light {
-    font-weight: 400;
-  }
+  &--light { font-weight: 400; }
 
-  &--white {
-    color: #fff;
-  }
+  &--white { color: #fff; }
 }
 
 .heading-3 {
@@ -28,9 +24,8 @@ body {
   font-weight: 700;
   @extend %heading;
 
-  &--gold {
-    color: $gold;
-  }
+  &--white { color: #fff; }
+  &--gold { color: $gold; }
 }
 
 .italic-text {
@@ -44,9 +39,7 @@ body {
   font-size: 1.4rem;
   line-height: 2.5rem;
 
-  &--white {
-    color: #fff;
-  }
+  &--white { color: #fff; }
 }
 
 .sub-heading {
@@ -59,9 +52,8 @@ body {
   font-size: 10rem;
   font-weight: 700;
   font-family: $secondaryFont;
-  &--gold {
-    color: $gold;
-  }
+
+  &--gold { color: $gold; }
 }
 
 .heading-container {

@@ -91,3 +91,55 @@
     background-color: $black;
   }
 }
+
+.testimonial {
+  position: relative;
+  background-color: $black;
+  padding-top: 9rem;
+
+  &__text {
+    text-align: center;
+  }
+
+  &__slider {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__slider-button {
+    position: absolute;
+    top: 50%;
+    padding: 1rem;
+    transform: translateY(-50%);
+    background-color: $lightGrey2;
+    border: none;
+    font-size: 1.4rem;
+
+    &--left {
+      left: -.5rem;
+    }
+
+    &--right {
+      right: -.5rem;
+    }
+
+    &:hover {
+      background-color: $gold;
+    }
+  }
+
+  &__client {
+    margin-bottom: 6rem;
+  }
+
+  &__img-container {
+    @include flexCenter;
+    width: percentage(1 / 5);
+    padding: 3.5rem 7rem;
+    background: $darkGrey3;
+    &:not(:last-child) {
+      border-right: 1px solid $darkGrey4;
+    }
+  }
+}
