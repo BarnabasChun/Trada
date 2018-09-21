@@ -1,6 +1,7 @@
 .title-decoration {
   display: inline-block; 
   position: relative;
+  margin-top: 1rem;
 
   &__item {
     @include square(.9rem);
