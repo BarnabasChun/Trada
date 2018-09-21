@@ -1,0 +1,46 @@
+.footer {
+  padding: 8rem 0 0;
+  background-color: $black;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+
+  &__contact {
+    grid-column: 1 / 2;
+  }
+
+  &__company-info {
+    text-align: center;
+    grid-column: 2 / 3;
+  }
+
+  &__location {
+    grid-column: 3 / 4;
+    text-align: right;
+  }
+
+  &__location-info {
+    display: block;
+  }
+  
+  &__copyright {
+    padding: 2.5rem 0;
+    text-align: center;
+    background-color: $black2;
+    grid-column: 1 / -1;
+  }
+}
+
+
+.copyright {
+  &__text {
+    font-size: 1.3rem;
+    font-family: $secondaryFont;
+    color: $darkGrey6;
+
+    &--white {
+      color: #fff;
+    }
+  }
+}
