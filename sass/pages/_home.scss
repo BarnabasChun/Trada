@@ -50,3 +50,18 @@
     text-align: center;
   }
 }
+
+.facts {
+  background-image: 
+  linear-gradient(rgba(#000, .4), rgba(#000, .4)),
+  url(../img/fun_facts.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 10rem 0;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 4rem;
+  }
+}

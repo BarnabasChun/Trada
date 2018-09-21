@@ -1,0 +1,32 @@
+.fact {
+  border: 1px solid #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 5.5rem;
+  
+  &__img-container {
+    background-color: #fff;
+    @include square(6rem);
+    @include flexCenter;
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    text-align: center;
+    font-family: $secondaryFont;
+    color: #fff;
+  }
+
+  &__count {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  
+  &__description {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+}
