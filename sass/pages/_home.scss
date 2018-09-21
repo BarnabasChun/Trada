@@ -143,3 +143,40 @@
     }
   }
 }
+
+.contact {
+  padding: 10rem 0;
+
+  &__text {
+    text-align: center;
+    margin-bottom: 6rem;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 3rem;
+  }
+
+  &__input {
+    // all inputs on left 
+    grid-column: 1 / 2;    
+  }
+
+  &__textarea {
+    grid-row: 1 / 4;
+    // takes up remaining
+    grid-column: 2 / -1;
+    min-height: 22rem;
+    max-height: 22rem;
+  }
+
+  &__button--submit {
+    grid-row: 4/ -1;
+    // span entire and center
+    grid-column: 1 / -1;
+    align-self: center;
+    justify-self: center;
+  }
+}
