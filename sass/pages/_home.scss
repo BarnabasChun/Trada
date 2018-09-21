@@ -65,3 +65,29 @@
     grid-gap: 4rem;
   }
 }
+
+.process {
+  position: relative;
+  padding: 10rem 0;
+
+  &__icon-container {
+    margin-bottom: 3rem;
+  }
+
+  &__text {
+    text-align: center;
+    margin-bottom: 8rem;
+  }
+
+  &__content {
+    @include flexCenter;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__icon-container {
+    @include flexCenter;
+    @include circle(8.8rem);
+    background-color: $black;
+  }
+}
