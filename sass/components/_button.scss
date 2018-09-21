@@ -44,3 +44,19 @@
   display: flex;
   justify-content: center;
 }
+
+.page-number-btn {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: $lightGrey2;
+  transition: all .2s;
+
+  &:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  &:hover {
+    color: $gold;
+    border-bottom: 1px solid currentColor;
+  }
+}
