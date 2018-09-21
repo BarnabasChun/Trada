@@ -31,8 +31,11 @@ body {
 .italic-text {
   font-weight: 400;
   font-size: 1.1rem;
+  line-height: 2.5rem;
   font-style: italic;
   text-transform: none;
+
+  &--white { color: #fff; }
 }
 
 .paragraph {
