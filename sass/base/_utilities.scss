@@ -31,3 +31,19 @@
     bottom: -4px;
   }
  }
+
+
+.single-underline {
+  &:after {
+    content: '';
+    display: block;
+    background-color: $darkGrey1;
+    width: 30px;
+    height: 2px;
+    text-align: inherit;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1rem;
+  }
+}
