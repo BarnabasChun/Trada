@@ -1,7 +1,22 @@
 .form {
-  &__input {
+  &__input, &__textarea {
     font-size: 1.4rem;
     font-weight: inherit;
     font-family: inherit;
+    padding: 1rem 2rem;
+    border: 1px solid $lightGrey2;
+
+    &:active,
+    &:focus {
+      outline-color: $gold;
+    }
+  }
+
+  &__textarea {
+    resize: vertical;
+  }
+
+  ::-webkit-input-placeholder {
+    color: $darkGrey1;
   }
 }
