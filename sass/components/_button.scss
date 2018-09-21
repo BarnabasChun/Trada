@@ -2,6 +2,7 @@
   &,
   &:visited,
   &:link {
+    display: inline-block; // anchor tags default display = inline
     font-size: 1.1rem;
     font-family: $secondaryFont;
     font-weight: 700;
