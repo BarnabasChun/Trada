@@ -24,3 +24,39 @@
     }
   }
 }
+
+.mobile-nav-container {
+  height: 100%;
+  width: 0; // change with JS
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  right: 0;
+  overflow-x: hidden; 
+  transition: 0.5s; 
+  background: $black;
+}
+
+.mobile-nav {
+  &__nav {
+    height: 100vh;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  &__links {
+    flex-direction: column;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  &__social {
+    font-size: 2.4rem;
+  }
+}

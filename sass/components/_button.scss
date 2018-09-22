@@ -105,3 +105,17 @@
     content: "\f103";
   }
 }
+
+.close-btn {
+  color: white;
+  font-size: 6rem;
+  position: absolute;
+  right: 2rem;
+  top: .8rem;
+  cursor: pointer;
+  transition: all .2s;
+
+  &:hover {
+    color: $gold;
+  }
+}
