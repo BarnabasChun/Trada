@@ -65,9 +65,12 @@
 
 .back-to-top-btn {
   position: fixed;
-  right: 2rem;
-  bottom: 3rem;
+  right: 5rem;
+  bottom: 5rem;
+  
   @include square(5rem);
+  @include flexCenter;
+  flex-wrap: wrap;
 
   text-align: center;
   letter-spacing: .7rem;
