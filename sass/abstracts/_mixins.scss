@@ -19,3 +19,15 @@
   justify-content: center;
   align-items: center;
 }
+
+// MEDIA QUERY MANAGER
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == xs { @media only screen and (max-width: 25em) { @content }; } // 400px
+  @else if $breakpoint == sm { @media only screen and (max-width: 28.125em) { @content }; } // 600px
+  @else if $breakpoint == md { @media only screen and (max-width: 50em) { @content }; } // 800px
+  @else if $breakpoint == lg { @media only screen and (max-width: 65em) { @content }; } // 1040px 
+  @else {
+    @error 'No value found for `#{$breakpoint}`. '
+         + 'Please make sure it is defined.';
+  }
+}
