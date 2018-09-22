@@ -1,7 +1,6 @@
 body {
   font-weight: 400;
   font-family: $primaryFont;
-  line-height: 1.6;
 }
 
 %heading {
@@ -57,12 +56,24 @@ body {
   font-family: $secondaryFont;
 
   &--gold { color: $gold; }
+
+  @include respond-to(sm) {
+    font-size: 8rem;
+  }
+  
+  @include respond-to(xs) {
+    font-size: 6rem;
+  }
 }
 
 .heading-container {
   text-transform: uppercase;
   text-align: center;
-  animation: moveInFromBottom 1s ease-in;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: moveInFromBottom 2s;
 }
 
 .menu-icon {

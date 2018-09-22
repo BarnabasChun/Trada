@@ -24,12 +24,12 @@
   
   &::before {
     width: calc(2 * 2.5rem);
-    bottom: 0;
+    bottom: -4px;
   }
   
   &::after {
     width: 2.5rem;
-    bottom: -4px;
+    bottom: -8px;
   }
  }
 

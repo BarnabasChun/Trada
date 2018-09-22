@@ -1,8 +1,18 @@
 .overlap {
   display: flex;
+  @include respond-to(md) {
+    flex-direction: column;
+  }
 
   > * {
     width: percentage(1 / 2);
+
+    @include respond-to(md) {
+      width: 100%;
+      &:not(:last-child) {
+        margin-bottom: 4rem;
+      }
+    }
   }
 
   &__figure {
@@ -14,6 +24,10 @@
     background-color: #fff;
     padding: 8rem 6rem;
     transform: scale(.9) translateX(-10rem);
+
+    @include respond-to(md) {
+      transform: none;
+    }
   } 
 }
 

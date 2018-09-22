@@ -14,7 +14,7 @@
   &--primary {
     color: $black;
     border: 1px solid $black;
-    background-color: transparent;
+    background-color: #fff;
 
     &:hover {
       background-color: $gold;
@@ -64,6 +64,7 @@
 }
 
 .back-to-top-btn {
+  z-index: 99999;
   position: fixed;
   right: 5rem;
   bottom: 5rem;
@@ -113,8 +114,8 @@
   color: white;
   font-size: 6rem;
   position: absolute;
-  right: 2rem;
-  top: .8rem;
+  right: 5rem;
+  top: 1rem;
   cursor: pointer;
   transition: all .2s;
 

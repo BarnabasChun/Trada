@@ -5,21 +5,49 @@
     padding: 8rem 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
+    grid-gap: 4rem;
+
+    @include respond-to(md) {
+      grid-template-columns: 1fr;
+    }
   }
 
+  &__heading {
+    @include respond-to(md) {
+      &::before,
+      &::after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+    
   &__contact {
     grid-column: 1 / 2;
+
+    @include respond-to(md) {
+      grid-column: 1 / -1;
+      text-align: center;
+    }
   }
 
   &__company-info {
     text-align: center;
     grid-column: 2 / 3;
+
+    @include respond-to(md) {
+      grid-column: 1 / -1;
+    }
   }
 
   &__location {
     grid-column: 3 / 4;
     text-align: right;
+
+    @include respond-to(md) {
+      text-align: center;
+      grid-column: 1 / -1;
+    }
   }
 
   &__location-info {

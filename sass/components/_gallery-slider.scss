@@ -2,6 +2,10 @@
   display: flex;
   justify-content: center;
 
+  @include respond-to(sm) {
+    flex-direction: column;
+  }
+
   &__btn {
     font-family: $secondaryFont;
     cursor: pointer;
@@ -15,11 +19,20 @@
     &--first {
       border-top-left-radius: 100px;
       border-bottom-left-radius: 100px;
+      @include respond-to(sm) {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
     }
     &--last {
       border-top-right-radius: 100px;
       border-bottom-right-radius: 100px;
+      @include respond-to(sm) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
     }
+
 
     &:hover {
       background-color: $gold;
