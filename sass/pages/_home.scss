@@ -216,57 +216,45 @@
     grid-template-rows: repeat(4, min-content);
     grid-gap: 3rem;
 
+    grid-template-areas: 
+      'name message'
+      'email message'
+      'subject message'
+      'submit submit';
+
     @include respond-to(md) {
       grid-template-columns: 1fr;
+
+      grid-template-areas: 
+      'name name'
+      'email email'
+      'subject subject'
+      'message message'
+      'submit submit';
     }
   }
 
   &__input {
-    // all inputs on left 
-    grid-column: 1 / 2;    
-    @include respond-to(md) {
-      grid-column: 1 / -1;
-    }
-
     &--name {
-      grid-row: 1 / 2;
-      @include respond-to(md) {
-      }
+      grid-area: name;
     }
     &--email {
-      grid-row: 2 / 3;
-      @include respond-to(md) {
-      }
+      grid-area: email;
     }
     &--subject {
-      grid-row: 3 / 4;
-      @include respond-to(md) {
-      }
+      grid-area: subject;
     }
   }
 
   &__textarea {
-    grid-row: 1 / 4;
-    // takes up remaining
-    grid-column: 2 / -1;
+    grid-area: message;
     min-height: 22rem;
     max-height: 22rem;
-
-    @include respond-to(md) {
-      grid-column: 1 / -1;
-      grid-row: 4 / 5;
-    }
   }
 
   &__button--submit {
-    grid-row: 4/ -1;
-    // span entire and center
-    grid-column: 1 / -1;
+    grid-area: submit;
     align-self: center;
     justify-self: center;
-
-    @include respond-to(md) {
-      grid-row: 5 / -1;
-    }
   }
 }
