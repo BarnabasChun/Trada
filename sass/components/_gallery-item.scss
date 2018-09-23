@@ -29,11 +29,9 @@
 
   &__icons {
     display: flex;
-    position: absolute;
-    top: 50%;
+    @include vertPosCenter;
     left: 0;
     right: 0;
-    transform: translateY(-50%);
     justify-content: center;
     opacity: 0;
     transition: opacity .3s;

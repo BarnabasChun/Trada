@@ -42,9 +42,7 @@
     width: 30px;
     height: 2px;
     text-align: inherit;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    @include horizPosCenter(left);
     margin-top: 1rem;
   }
 }

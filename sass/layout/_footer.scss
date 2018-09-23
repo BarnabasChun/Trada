@@ -16,8 +16,7 @@
     @include respond-to(md) {
       &::before,
       &::after {
-        left: 50%;
-        transform: translateX(-50%);
+        @include horizPosCenter(left);
       }
     }
   }

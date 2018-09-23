@@ -34,9 +34,7 @@
   }
 
   &__slider {
-    position: absolute;
     bottom: 9rem;
-    left: 50%;
-    transform: translateX(-50%);
+    @include horizPosCenter(left);
   }
 }

@@ -40,8 +40,7 @@
       text-align: center;
       &::before,
       &::after {
-        left: 50%;
-        transform: translateX(-50%);
+        @include horizPosCenter(left);
       }
     }
   }
@@ -79,8 +78,7 @@
       }
     }
     
-    position: absolute;
-    top: 50%;
+    @include vertPosCenter;
     left: 1rem;
   }
 }

@@ -92,19 +92,16 @@
   &::before,
   &::after {
     font-family: "Font Awesome 5 Free"; font-weight: 900; 
-    position: absolute;
   }
 
   &::before {
-    left: 50%;
-    transform: translateX(-50%);
+    @include horizPosCenter(left);
     top: -2.5rem;
     content: "\f102";
   }
   
   &::after {
-    right: 50%;
-    transform: translateX(50%);
+    @include horizPosCenter(right);
     bottom: -2.5rem;
     content: "\f103";
   }
