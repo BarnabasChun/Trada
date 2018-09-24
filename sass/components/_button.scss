@@ -9,6 +9,7 @@
     cursor: pointer;
     padding: 1rem 2rem;
     text-transform: uppercase;
+    transition: all 0.2s ease;
   }
 
   &--primary {
@@ -113,6 +114,17 @@
   top: 1rem;
   cursor: pointer;
   transition: all .2s;
+
+  &:focus,
+  &:active {
+    outline: none;
+    transform: scale(1.1);
+  }
+
+  &:hover {
+    color: $gold;
+  }
+}
 
 .menu-btn {
   background: transparent;
