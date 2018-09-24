@@ -6,10 +6,10 @@ $('.menu-icon').click(() => {
   if ($(window).width() >= 800) {
     mobileNav.css('width', '40%');
   } else {
+    headerNav.hide();
     mobileNav.css('width', '100%');
   }
 
-  headerNav.hide()
   $('.back-to-top-btn').hide()
 })
 
@@ -33,8 +33,10 @@ $(window).scroll(() => {
     $('.header__social').hide();
     headerNav.css('background-color', '#202020');
   } else {
-    $('.header__links').show();
-    $('.header__social').show();
+    if ($(window).width() >= 1040) {
+      $('.header__links').show();
+      $('.header__social').show();
+    }
     headerNav.css('background-color', 'transparent');
   }
 })
