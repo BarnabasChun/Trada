@@ -64,15 +64,18 @@
 }
 
 .back-to-top-btn {
-  z-index: 99999;
-  position: fixed;
-  right: 5rem;
-  bottom: 5rem;
-  
+  text-transform: uppercase;
   @include square(5rem);
+  position: fixed;
+  bottom: 0;
+  right: 5rem;
+  transform: translateY(-75%);
   @include flexCenter;
   flex-wrap: wrap;
-
+  color: $gold;
+  text-align: center;
+  padding-left: .7rem;
+  z-index: 99999;
   text-align: center;
   letter-spacing: .7rem;
   word-break: break-word;
@@ -80,15 +83,9 @@
   font-weight: 400;
   line-height: 1.7;
   font-family: $secondaryFont;
-  text-transform: uppercase;
-  color: $gold;
   border: 1px solid currentColor;
   background-color: transparent;
-
-  &__text {
-    display: inline-block;
-  }
-  
+    
   &::before,
   &::after {
     letter-spacing: normal;
