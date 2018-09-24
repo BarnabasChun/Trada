@@ -73,19 +73,6 @@ body {
   animation: moveInFromBottom 2s;
 }
 
-.menu-icon {
-  background: transparent;
-  border: none;
-  color: #fff;
-  font-size: 2.5rem;
-  cursor: pointer;
-  transition: color .3s;
-  
-  &:hover {
-    color: $gold;
-  }
-}
-
 .title-container {
   text-align: center;
 }

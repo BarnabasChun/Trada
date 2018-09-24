@@ -2,7 +2,7 @@ const headerNav = $('.header__nav');
 const navHeight = headerNav.height();
 const mobileNav = $('.mobile-nav-container');
 
-$('.menu-icon').click(() => {
+$('.menu-btn').click(() => {
   if ($(window).width() >= 800) {
     mobileNav.css('width', '40%');
   } else {
