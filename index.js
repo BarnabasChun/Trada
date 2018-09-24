@@ -1,9 +1,10 @@
 const headerNav = $('.header__nav');
 const navHeight = headerNav.height();
 const mobileNav = $('.mobile-nav-container');
+const initialBp = 1040;
 
 $('.menu-btn').click(() => {
-  if ($(window).width() >= 800) {
+  if ($(window).width() >= initialBp) {
     mobileNav.css('width', '40%');
   } else {
     headerNav.hide();
@@ -33,7 +34,7 @@ $(window).scroll(() => {
     $('.header__social').hide();
     headerNav.css('background-color', '#202020');
   } else {
-    if ($(window).width() >= 1040) {
+    if ($(window).width() >= initialBp) {
       $('.header__links').show();
       $('.header__social').show();
     }
